@@ -1,5 +1,5 @@
 project:
-  name: quickstart-eks-mulesoft-runtime-fabric
+  name: cfn-ps-eks-mulesoft-runtime-fabric
   owner: quickstart-eng@amazon.com
   lambda_source_path: functions/source
   lambda_zip_path: functions/packages
