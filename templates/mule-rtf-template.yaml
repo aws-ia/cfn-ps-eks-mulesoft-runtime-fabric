@@ -73,7 +73,7 @@ Parameters:
     ConstraintDescription: >-
       The S3 bucket name can include numbers, lowercase letters, 
       and hyphens (-), but it cannot start or end with a hyphen.
-    Default: aws-quickstart
+    Default: aws-ia-us-east-1
     Description: >-
       Name of the S3 bucket for your copy of the deployment assets. Keep the default
       name unless you are customizing the template. Changing the name updates code 
@@ -96,7 +96,7 @@ Parameters:
       hyphens (-), underscores (_), periods (.), asterisks (*), single quotes ('),
       open parenthesis ((), close parenthesis ()), and forward slashes (/). End the
       prefix with a forward slash.
-    Default: quickstart-eks-mulesoft-runtime-fabric/
+    Default: cfn-ps-eks-mulesoft-runtime-fabric/
     Description: >-
       S3 key prefix that is used to simulate a folder for your copy of the 
       deployment assets. Keep the default prefix unless you are customizing 
@@ -132,7 +132,7 @@ Parameters:
     Type: String
     NoEcho: "true"    
 Conditions:
-  UsingDefaultBucket: !Equals [!Ref QSS3BucketName, 'aws-quickstart']
+  UsingDefaultBucket: !Equals [!Ref QSS3BucketName, 'aws-ia-us-east-1']
   CreateLoginCredentialsSecret: !Not [!Equals [!Ref Password, ""]]
   CreateLicenseSecret: !Not [!Equals [!Ref MuleLicenseKeyinbase64, ""]]  
 
