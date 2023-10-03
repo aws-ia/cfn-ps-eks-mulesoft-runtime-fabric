@@ -1,3 +1,13 @@
-// Include any postdeployment steps here, such as steps necessary to test that the deployment was successful. If there are no postdeployment steps, leave this file empty.
-
 == Postdeployment steps
+
+=== Associate your environment with MuleSoft Runtime Fabric
+
+. Log in to the MuleSoft Anypoint control plane, and navigate to Runtime Manager.
+. From Runtime Manager, select the Amazon EKS cluster that you created.
+. Choose the *Associated Environments* tab.
+. Add the appropriate business group, and choose the environment to add to Runtime Fabric.
+. Choose *Apply Allocation*.
+
+=== Deploy and test your Mule application
+
+For details on deploying and testing your Mule application, refer to https://docs.mulesoft.com/runtime-fabric/1.6/deploy-to-runtime-fabric[Deploy a Mule Application to Runtime Fabric^].
